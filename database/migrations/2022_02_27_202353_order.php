@@ -14,9 +14,9 @@ class Order extends Migration
     public function up()
     {
         Schema::create('order', function (Blueprint $table) {
-            $table->id();
+            $table->integer('id', true);
             $table->integer('user_id');
-            $table->foreign('user_id')->references('id')->on('user')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->dateTime('date');
             $table->string('type');
             $table->string('deliveryAddress');

@@ -3,7 +3,7 @@
         <div class="footer card-footer text-left bg-gray-300">
             <div class="flex flex-row p-1">
                 <div class="flex-col flex-1 ">
-                    <h2 class="text-xl font-bold">Foodie</h2>
+                    <h2 class="text-xl font-bold">Neelanchal Canteen</h2>
 
                     <div class="flex flex-row">
                         <button class="mr-3 hover:text-blue-700">Store Locations</button>
@@ -22,7 +22,7 @@
                                     </svg>
                                 </td>
                                 <td class="text-left">
-                                    <span class="text-sm pl-2">info@foodie.com.my</span>
+                                    <span class="text-sm pl-2">info@Neelanchal Canteen.com.my</span>
                                 </td>
                             </tr>
                             <tr>
@@ -41,7 +41,7 @@
 
                 <div class="relative flex-1">
                     <div class="absolute right-0 bottom-0">
-                        <h1 class="text-sm text-right">@ 2022 Foodie Sdn. Bhd.</h1>
+                        <h1 class="text-sm text-right">@ 2022 Neelanchal Canteen Sdn. Bhd.</h1>
                         
                         <div class="row my-1">
                             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -65,7 +65,7 @@
 {{-- 
             
             <!-- <div class="row-cols-sm-2"> -->
-            <h2 class="text-lg font-bold">Foodie</h2>
+            <h2 class="text-lg font-bold">Neelanchal Canteen</h2>
             <!-- <h1>About the company</h1>
             <p>About the company endguestwo;egn regnq;oenrg;onw aw;oejng;oewng</p> -->
             <!-- </div> -->
@@ -88,7 +88,7 @@
                             </svg>
                         </td>
                         <td class="text-left">
-                            <span class="text-sm pl-2">info@foodie.com.my</span>
+                            <span class="text-sm pl-2">info@Neelanchal Canteen.com.my</span>
                         </td>
                     </tr>
                     <tr class="border-5 border-transparent">
@@ -106,7 +106,7 @@
             <!-- </div> -->
             
             <div class="offset-sm-9">
-                <h1 class="text-sm text-right">@ 2022 Foodie Sdn. Bhd.</h1>
+                <h1 class="text-sm text-right">@ 2022 Neelanchal Canteen Sdn. Bhd.</h1>
             </div>
 
             <div class="row-cols-sm-auto">

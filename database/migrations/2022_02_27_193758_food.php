@@ -14,7 +14,7 @@ class Food extends Migration
     public function up()
     {
         Schema::create('food', function (Blueprint $table) {
-            $table->id();
+            $table->integer('id', true);
             $table->string('name');
             $table->string('price');
             $table->string('description');
