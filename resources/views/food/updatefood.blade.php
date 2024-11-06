@@ -47,9 +47,9 @@
           <label for="food type" class="block text-lg font-medium text-gray-700">Food type</label>
           <div>
           <select name="type" id="type" class="flex justify-center mt-1 flex rounded-md shadow-sm p-1 border focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-md sm:text-lg border-gray-300">>
-            <option value="Western" {{($food['type'] == "Western") ? "selected" : ""}}>Western</option>
-            <option value="Chinese" {{($food['type'] == "Chinese") ? "selected" : ""}}>Chinese</option>
-            <option value="Japanese" {{($food['type'] == "Japanese") ? "selected" : ""}}>Japanese</option>
+            <option value="Veg" {{($food['type'] == "Veg") ? "selected" : ""}}>Veg</option>
+            <option value="Non-Veg" {{($food['type'] == "Non-Veg") ? "selected" : ""}}>Non-Veg</option>
+            <option value="Other" {{($food['type'] == "Other") ? "selected" : ""}}>Other</option>
             
           </select>
         </div>

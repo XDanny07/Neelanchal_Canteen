@@ -20,7 +20,7 @@ class FoodFactory extends Factory
             'name' => $this->faker->unique()->foodName(),
             'price' => $this->faker->numberBetween(5, 20),
             'description' => $this->faker->sentence(6, true),
-            'type' => $this->faker->randomElement(['Western', 'Chinese', 'Japanese']),
+            'type' => $this->faker->randomElement(['Veg', 'Non-Veg', 'Other']),
             'picture' => $this->faker->imageUrl(640, 480),
         ];
     }

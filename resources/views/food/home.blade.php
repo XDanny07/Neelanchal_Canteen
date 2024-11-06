@@ -24,13 +24,13 @@ if (session('cart') == null) {
                 <a href="/home" class="sort-font">All</a>
             </div>
             <div class="py-1 px-3 border-solid border-1 border-slate-300 rounded-xl text-center bg-white">
-                <a href="../home/Western" class="sort-font">Western</a>
+                <a href="../home/Veg" class="sort-font">Veg</a>
             </div>
             <div class="py-1 px-3 border-solid border-1 border-slate-300 rounded-xl text-center bg-white">
-                <a href="../home/Chinese" class="sort-font">Chinese</a>
+                <a href="../home/Non-Veg" class="sort-font">Non-Veg</a>
             </div>
             <div class="py-1 px-3 border-solid border-1 border-slate-300 rounded-xl text-center bg-white">
-                <a href="../home/Japanese" class="sort-font">Japanese</a>
+                <a href="../home/Other" class="sort-font">Other</a>
             </div>
         </div>
         <div class="flex flex-row space-x-4 flex-grow justify-end">
@@ -53,7 +53,7 @@ if (session('cart') == null) {
             <div class="p-4">
                 <div class="font-bold text-xl mb-2">{{$data['name']}}</div>
                 <p class="text-gray-700 text-base">
-                    RM {{$data['price']}}
+                    &#8377;  {{$data['price']}}
                 </p>
             </div>
         </a>

@@ -1,1 +1,36 @@
 *.sqlite*
+
+
+
+
+-- Veg Items
+INSERT INTO food (name, price, description, type, picture) VALUES
+('Vada Pav', '30', 'A popular Indian street food made of a spicy potato filling inside a bun', 'Veg', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrhPSEnAEklB_atmUHP_SXURtOjyJgoGtLp2QLbeHVPfCwnpzk6smapdkvvnzf'),
+('Samosa', '20', 'A fried pastry filled with spiced potatoes and peas', 'Veg', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWiKVzyTsJGnkpLmS_XFB2-kzDoaVAtXD0B82lkAHkxzC6DXK3cd04ZwmgLdz_'),
+('Idli Sambar', '50', 'Steamed rice cakes served with a tangy lentil soup', 'Veg', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjnuX59MPh-VnyLor1-SkaKKIKuREmy8ZgtCYSHzGPnE5HMTCWj00CunrSN4VJ'),
+('Vada Sambar', '60', 'Deep-fried lentil doughnuts served with sambar and chutney', 'Veg', 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqI1npuu-hLhBbu_yQEpMl32rjI6r5vsLmyP5sghyqSeEQOITkc7PzcVjEdwD_'),
+('Paneer Masala', '120', 'Cottage cheese cooked in a rich and spicy tomato-based gravy', 'Veg', 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8Dcj1PpsaoPS3sxRru9InlqwNBhS8m0Uef38W7OqofaxZDia6zFAghDARKaod'),
+('Mutter Paneer', '110', 'Cottage cheese and peas cooked in a spicy tomato-based gravy', 'Veg', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRK6N6klcKCfNx2n9f49K--7EmM8dJGRpN8nZFs8YnMdQkHfnjTS89isKe_cWVu'),
+('Shahi Paneer', '130', 'Cottage cheese cooked in a creamy, rich gravy with a touch of nuts', 'Veg', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpL-LPEBVpcFhzzXxw3v9PPrhO2aB8Q3sg-527EkR_e37EVOITu9looD40g1Fa'),
+('Kadhai Paneer', '120', 'Cottage cheese cooked with bell peppers and spices in a wok', 'Veg', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4Du0IyGz176ECI8f-X80hFWMaIWx7MMg8Kb7SU5R1cVa8-66MN6buvvtCC0By'),
+('Paneer Butter Masala', '140', 'Cottage cheese cooked in a creamy tomato gravy with butter', 'Veg', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-cKDbzMKLmksA_4T9-rIlnT3OUwY-fUMp4tFCIrusvMQ5Yv3jHg3WV4iXk14T'),
+('Paneer Chilly', '130', 'Cottage cheese stir-fried with vegetables and spicy sauce', 'Veg', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmMle6MeTaNB3MEKpbdtQwgoaACYEQoVbsAmt8z1lHnDOQj8g_HQ5VvpOvyOs0'),
+('Veg Biryani', '150', 'Fragrant rice cooked with vegetables and spices', 'Veg', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTB5IGnJ-TjdQftL5mU5fRlOC_53N47Bio2zY_4V1qD_YpNt8Lr2iiq9tMKqlZ'),
+('Aloo Paratha', '40', 'Flatbread stuffed with spiced mashed potatoes', 'Veg', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8Ix283Y3MQzrLgrIOCM7SwWVJDZ67yCoXRHjK3OnAT7kZ-1Gd3xODgx6kfDDP'),
+('Chana Bhatura', '90', 'Spicy chickpeas served with fluffy deep-fried bread', 'Veg', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1_OiYqLzy9sXARcMKUfF6l1og8_71iVeuD6cZHmsZwHoaIj5mnzQECMjAJtVb'),
+('Pav Bhaji', '60', 'Spicy mashed vegetables served with buttered bread rolls', 'Veg', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQ2xpae9qoF1HDeKSvQBVsA1ACXl_XcaQ9kC7wyJ-fLvW3X5ogCXJjtwur_b-N'),
+('Momos', '80', 'Steamed dumplings filled with spiced vegetables', 'Veg', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSB0Z7u-LK2eU0czHYsD0r08RKUQRe5ht8n_B6mNbpX8D2qm_2gpKCb-qERoPUZ'),
+('Maggie', '40', 'Instant noodles cooked with spices and vegetables', 'Veg', 'https://theovenchef.com/wp-content/uploads/2023/12/veg-maggie-1.png');
+
+-- Non-Veg Items
+INSERT INTO food (name, price, description, type, picture) VALUES
+('Chicken Masala', '200', 'Chicken cooked in a spicy tomato-based gravy', 'Non-Veg', 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsgijZq3C6HDojKy1TyrY4aa5Pwqm9a-AGKq5B4dHpiSSa5t-gZMPMXUUGTh0S'),
+('Chicken Kadhai', '210', 'Chicken cooked with bell peppers, onions, and spices in a wok', 'Non-Veg', 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRACNATMlTGSq7Dw3KrMOA1VHJ-d0xcL161ubRuQGkiBOBRPaW1wYGWvLu3i7iM'),
+('Chicken Kolhapuri', '220', 'A spicy chicken curry with Kolhapuri flavors', 'Non-Veg', 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVvRTRpaFajw1WgekThn-vqblBs4UqKZE2LLGvZRoLcYFAtrrsPue6K0RbtqUl'),
+('Chicken Handi', '250', 'Chicken cooked in a traditional earthen pot with spices', 'Non-Veg', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtLRN3t66IWMohJE17qhUrn656Rz9oRzcAcbAAWKMfxMrZwWmGR6vERvaq2uRJ'),
+('Chicken Biryani', '250', 'Fragrant rice cooked with chicken and spices', 'Non-Veg', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHXqUMg1Yk8JkE1cDQdwRRBDrJQgmKXa0zgeODhStqdIfovE3b_lWAGKqTb149'),
+('Chicken Lollipop', '180', 'Deep-fried chicken wings coated in a spicy batter', 'Non-Veg', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzN-rr3SyDLtPG3-Hq8onq8PUprMuj5bpek4gwGEEN0g6E0cV5RTCV7qQEhPZn'),
+('Chicken Chilly', '190', 'Chicken stir-fried with vegetables and a spicy sauce', 'Non-Veg', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVtO8gydiQ_ZUfZKpojJE9HKq2N-t1SbU_Lans00mj_lkI9x8JXm4F4PHDuPSZ'),
+('Chicken Noodles', '120', 'Stir-fried noodles with spiced chicken and vegetables', 'Non-Veg', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfSBBsn5sh5QRkMsgEWxM8QUKUdhCfQ-izaDk3D75p_nKFugHBzmiuAjdjGYx_'),
+('Omlette', '50', 'Eggs cooked with spices and vegetables', 'Non-Veg', 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_F2HxqxcLaNwVKXkgcCsKvawm92TJ44hobWVT2IqEIUQnZCcgc4Sevqy0_EAx'),
+('Egg Bhurji', '60', 'Scrambled eggs cooked with onions, tomatoes, and spices', 'Non-Veg', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQciY9Z072Utxg2Q8RJBtuyv76H_FIos7Hn9dKNMgHos_NawX-nCLt7p6m1fnte');
