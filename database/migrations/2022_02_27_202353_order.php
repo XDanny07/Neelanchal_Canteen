@@ -19,6 +19,7 @@ class Order extends Migration
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->dateTime('date');
             $table->string('type');
+            $table->string('status');
             $table->string('deliveryAddress');
         });
     }

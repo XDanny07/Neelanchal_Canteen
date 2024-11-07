@@ -20,10 +20,7 @@ INSERT INTO food (name, price, description, type, picture) VALUES
 ('Chana Bhatura', '90', 'Spicy chickpeas served with fluffy deep-fried bread', 'Veg', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1_OiYqLzy9sXARcMKUfF6l1og8_71iVeuD6cZHmsZwHoaIj5mnzQECMjAJtVb'),
 ('Pav Bhaji', '60', 'Spicy mashed vegetables served with buttered bread rolls', 'Veg', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQ2xpae9qoF1HDeKSvQBVsA1ACXl_XcaQ9kC7wyJ-fLvW3X5ogCXJjtwur_b-N'),
 ('Momos', '80', 'Steamed dumplings filled with spiced vegetables', 'Veg', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSB0Z7u-LK2eU0czHYsD0r08RKUQRe5ht8n_B6mNbpX8D2qm_2gpKCb-qERoPUZ'),
-('Maggie', '40', 'Instant noodles cooked with spices and vegetables', 'Veg', 'https://theovenchef.com/wp-content/uploads/2023/12/veg-maggie-1.png');
-
--- Non-Veg Items
-INSERT INTO food (name, price, description, type, picture) VALUES
+('Maggie', '40', 'Instant noodles cooked with spices and vegetables', 'Veg', 'https://theovenchef.com/wp-content/uploads/2023/12/veg-maggie-1.png'),
 ('Chicken Masala', '200', 'Chicken cooked in a spicy tomato-based gravy', 'Non-Veg', 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsgijZq3C6HDojKy1TyrY4aa5Pwqm9a-AGKq5B4dHpiSSa5t-gZMPMXUUGTh0S'),
 ('Chicken Kadhai', '210', 'Chicken cooked with bell peppers, onions, and spices in a wok', 'Non-Veg', 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRACNATMlTGSq7Dw3KrMOA1VHJ-d0xcL161ubRuQGkiBOBRPaW1wYGWvLu3i7iM'),
 ('Chicken Kolhapuri', '220', 'A spicy chicken curry with Kolhapuri flavors', 'Non-Veg', 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVvRTRpaFajw1WgekThn-vqblBs4UqKZE2LLGvZRoLcYFAtrrsPue6K0RbtqUl'),

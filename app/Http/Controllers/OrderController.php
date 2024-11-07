@@ -153,6 +153,7 @@ class OrderController extends Controller
             'user_id' => Auth::id(),
             'date' => Carbon::now(),
             'type' => $req->type,
+            'status' => "waiting",
             'deliveryAddress' => $req->address,
         ]);
         
@@ -166,4 +167,18 @@ class OrderController extends Controller
         Session::flash('success', 'Successfully placed order.');
         return redirect('/order');
     }
+
+    public function updateStatus(Request $request, $id)
+    {
+        $request->validate([
+            'status' => 'required|in:Waiting,Accepted,Cancelled,Delivered',
+        ]);
+
+        $order = Order::findOrFail($id);
+        $order->status = $request->input('status');
+        $order->save();
+
+        return redirect()->back()->with('success', 'Order status updated successfully.');
+    }
+
 }

@@ -27,6 +27,7 @@ class Order extends Model
         'user_id',
         'date',
         'type',
+        'status',
         'deliveryAddress',
     ];
 

@@ -53,6 +53,23 @@
                             <div class="p-1"></div>
                             @endforeach
                         </div>
+                        @if (Auth::user()->isAdmin)
+                            <div class="status_change" style="padding: 8px; font-size: 16px;">
+                                <form action="{{ route('orders.updateStatus', $order->id) }}" method="POST" id="statusForm">
+                                    @csrf
+                                    @method('PUT')
+                                    <span>Status : </span>
+                                    <select name="status" id="statusSelect" class="form-select" onchange="document.getElementById('statusForm').submit();">
+                                        <option value="Waiting" {{ $order->status == 'Waiting' ? 'selected' : '' }}>Waiting</option>
+                                        <option value="Accepted" {{ $order->status == 'Accepted' ? 'selected' : '' }}>Accepted</option>
+                                        <option value="Cancelled" {{ $order->status == 'Cancelled' ? 'selected' : '' }}>Cancelled</option>
+                                        <option value="Delivered" {{ $order->status == 'Delivered' ? 'selected' : '' }}>Delivered</option>
+                                    </select>
+                                </form>
+                            </div>
+                        @else
+                            <p class="mb-1"> Status: <span class="font-semibold"> {{$order->status}} </span> </p>
+                        @endif 
                     </div>
                 </div>
             </div>
