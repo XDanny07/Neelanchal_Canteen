@@ -3,7 +3,11 @@
 @section('content')
 <h1 class="px-4 pt-1 pb-3 text-3xl font-bold">
     <div class="flex flex-row flex-1">
-        <span class="mr-5 self-center"> My Order History </span>
+        @if (Auth::user()->isAdmin)
+            <span class="mr-5 self-center"> All Orders </span>
+        @else 
+            <span class="mr-5 self-center"> My Order History </span>
+        @endif
         <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 self-center" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
         </svg>
@@ -17,9 +21,10 @@
     @if (count($orders) != 0)
         @foreach ($orders as $order)
             <div class="px-3 py-2">
-                <div class="flex flex-row p-4 leading-normal border shadow-md hover:bg-gray-100">
+                <div class="flex flex-row p-4 leading-normal border rounded-md shadow-md hover:bg-gray-100 bg-white">
                     <div class="p-2 w-1/5">
                         <p class="mb-1"> Order ID: <span class="font-semibold"> {{$order->id}} </span> </p>
+                        <p class="mb-1"> User: <span class="font-semibold"> {{$order->by}} </span> </p>
                         <p class="mb-1"> Date: <span class="font-semibold"> {{date_format(date_create($order->date), 'jS F Y')}} </span> </p>
                         <p class="mb-1"> Type: <span class="font-semibold capitalize"> {{$order->type}} </span> </p>
                         <p class="mb-1"> Total: <span class="font-semibold capitalize"> &#8377; {{number_format((float)$order->total, 2, '.', '')}} </span> </p>

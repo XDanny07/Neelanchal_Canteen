@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Food;
 use App\Models\Order;
+use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -23,19 +24,20 @@ class OrderController extends Controller
     public function show()
     {
         $user_id = Auth::id();
-        $orders = Order::where('user_id', $user_id)->orderBy('date', 'desc')->get();
-        
+        $orders = Auth::user()->isAdmin ? Order::orderBy('date', 'desc')->get()
+        : Order::where('user_id', $user_id)->orderBy('date', 'desc')->get();
         // To get total amount for each order:
-        foreach($orders as $order) {
-            $total = 0.0;
-
-            foreach($order->food as $food) {
-                $total += $food->price * $food->pivot->quantity;
+            foreach($orders as $order) {
+                $total = 0.0;
+                $name = User::where('id',$order->user_id)->get('name');
+                foreach($order->food as $food) {
+                    $total += $food->price * $food->pivot->quantity;
+                }
+                
+                $order->total = $total;
+                $order->by = $name[0]->name;
             }
             
-            $order->total = $total;
-        }
-
         return view('order', ['orders' => $orders]);
     }
 

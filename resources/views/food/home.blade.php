@@ -17,7 +17,7 @@ if (session('cart') == null) {
 </div>
 
 <div class="mx-8">
-    <div class="flex flex-row">
+    <div class="flex flex-row font-bold">
         <div class="flex flex-row space-x-4 flex-grow">
             <span class="font-weight-bold sort-font my-auto"> Filter By :</span>
             <div class="py-1 px-3 border-solid border-1 border-slate-300 rounded-xl text-center bg-white">
@@ -47,7 +47,7 @@ if (session('cart') == null) {
 
 <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-5">
     @foreach($foods as $data)
-    <div class="rounded-md overflow-hidden shadow-md border-1 border-gray-100">
+    <div class="rounded-md overflow-hidden shadow-md border-1 border-gray-100 bg-white">
         <a href="../food/{{$data['id']}}">
             <img class="h-48 w-full object-cover" src="{{$data['picture']}}" alt="Mountain">
             <div class="p-4">

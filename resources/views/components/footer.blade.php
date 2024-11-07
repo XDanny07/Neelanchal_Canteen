@@ -1,15 +1,15 @@
 <div>
     <div >
-        <div class="footer card-footer text-left bg-gray-300">
+        <div class="footer card-footer text-white text-left bg-red-600">
             <div class="flex flex-row p-1">
-                <div class="flex-col flex-1 ">
+                <div class="flex-col flex-1">
                     <h2 class="text-xl font-bold">Neelanchal Canteen</h2>
 
-                    <div class="flex flex-row">
+                    <div class="flex flex-row ">
                         <button class="mr-3 hover:text-blue-700">Store Locations</button>
-                        <span class="text-center text-gray-700">&#8226;</span>
+                        <span class="text-center text-white">&#8226;</span>
                         <button class="mx-3 hover:text-blue-700">About Us</button>
-                        <span class="text-center text-gray-700">&#8226;</span>
+                        <span class="text-center text-white">&#8226;</span>
                         <button class="ml-3 hover:text-blue-700">Contact Us</button>
                     </div>
 
@@ -56,7 +56,7 @@
             
                         <div class="text-right text-sm">             
                             <button class="hover:text-blue-700">Terms of Service</button>
-                            <span class="mx-1 text-gray-700">&#8226;</span>
+                            <span class="mx-1 text-white">&#8226;</span>
                             <button class="hover:text-blue-700">Privacy Policy</button>
                         </div>
                     </div>
