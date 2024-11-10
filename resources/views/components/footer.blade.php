@@ -22,7 +22,7 @@
                                     </svg>
                                 </td>
                                 <td class="text-left">
-                                    <span class="text-sm pl-2">info@Neelanchal Canteen.com.my</span>
+                                    <span class="text-sm pl-2">neelanchancanteen@gmail.com</span>
                                 </td>
                             </tr>
                             <tr>
@@ -32,7 +32,7 @@
                                     </svg>
                                 </td>
                                 <td class="text-left">
-                                    <span class="text-sm pl-2">+603-2276 1254</span>
+                                    <span class="text-sm pl-2">+91-7761838745</span>
                                 </td>
                             </tr>
                         </tbody>
@@ -41,7 +41,7 @@
 
                 <div class="relative flex-1">
                     <div class="absolute right-0 bottom-0">
-                        <h1 class="text-sm text-right">@ 2022 Neelanchal Canteen Sdn. Bhd.</h1>
+                        <h1 class="text-sm text-right">@ 2024 Neelanchal Canteen</h1>
                         
                         <div class="row my-1">
                             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -49,8 +49,7 @@
                                 <button> <i class="fa fa-google    hover:text-blue-700" style="font-size:20px;"> </i> </button>
                                 <button> <i class="fa fa-facebook  hover:text-blue-700" style="font-size:20px;"> </i> </button>
                                 <button> <i class="fa fa-instagram hover:text-blue-700" style="font-size:20px;"> </i> </button>
-                                <button> <i class="fa fa-github    hover:text-blue-700" style="font-size:20px;"> </i> </button>
-                                <button> <i class="fa fa-youtube   hover:text-blue-700" style="font-size:20px;"> </i> </button>                       
+                                                  
                             </ul>
                         </div>
             
